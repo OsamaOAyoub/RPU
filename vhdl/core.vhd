@@ -453,7 +453,7 @@ begin
         O_wait => alu_wait
     );
 
-    reg : register_set port map(
+    regfile : register_set port map(
         I_clk => core_clock,
         I_en => reg_en,
         I_dataD => registerWriteData,
